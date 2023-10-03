@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: hsl(204, 43%, 93%);
+    font-family: 'Karla', sans-serif;
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 380px;
+}
+.top-section {
+    border-radius: 5px 5px 0 0;
+    background-color: white;
+    padding-bottom: 30px;
+}
+.top-section h1 {
+    color: hsl(179, 62%, 43%);
+    padding-top: 22px;
+    padding-left: 28px;
+}
+.top-section h2 {
+    color: hsl(71, 73%, 54%);
+    padding-top: 25px;
+    padding-left: 28px;
+    font-size: 1.2rem;
+}
+.top-section p {
+    color: hsl(218, 22%, 67%);
+    font-size: 16px;
+    margin-left: 28px;
+    padding-right: 25px;
+    margin-right: 22px;
+    padding-top: 25px;
+    line-height: 1.7;
+}
+.mid-section {
+    background-color: hsl(179, 62%, 43%);
+    color: white;
+    padding-bottom: 30px;
+}
+.mid-section h2 {
+    font-size: 1.2rem;
+    padding-top: 22px;
+    padding-left: 28px;
+}
+.prices {
+    display: flex;
+    padding-left: 28px;
+    padding-top: 25px;
+}
+.prices p {
+    font-size: 2rem;
+    font-weight: 700;
+}
+.prices span {
+    opacity: .6;
+    margin-left: 12px;
+    margin-top: 8px;
+    letter-spacing: 1px;
+}
+.bottom-text {
+    margin-top: 5px;
+    padding-left: 30px;
+    font-style:inherit;
+}
+button {
+    background-color: hsl(71, 73%, 54%);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-left: 30px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    justify-content: center;
+    width: 80%;
+    height: 45px;
+    cursor: pointer;
+}
+.bottom-section {
+    background-color:  hsl(179, 47%, 52%);
+    color: white;
+    height: 290px;
+    border-radius: 0 0 5px 5px;
+}
+.bottom-section h3 {
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-bottom: 22px;
+}
+.bottom-section p {
+    padding-left: 30px;
+    margin-top: 8px;
+    opacity: .8;
+    font-size: 16px;
+}
+.middle-bottom-content {
+    padding-bottom: 25px;
+}
+@media screen and (min-width: 1024px) {
+    .container {
+        width: 700px;
+        margin-top: 100px;
+    }
+    .top-section p {
+        width: 85%;
+        padding-bottom: 15px;
+    }
+    .middle-bottom-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .mid-section {
+        border-radius: 0 0 0 5px;
+    }
+    button {
+        width: 70%;
+    }
+    .bottom-section {
+        border-radius: 0 0 5px 0;
+    }
+    .bottom-section p {
+        margin-top: 5px;
+    }
+}
